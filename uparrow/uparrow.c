@@ -2,7 +2,7 @@
 Author:
 
 This file provides a function called uparrow.
-uparrow(a, n, b) can also be denoted as a ^(n) b and satisifes:
+uparrow(a, b, n) can also be denoted as a ^(n) b and satisifes:
 
 a ^(n) b = a ^(n-1) (a ^(n-1) (a ^(n-1) ... a)
           [          b copies of a            ]
@@ -12,7 +12,7 @@ More formally,
 uparrow(a, b, n) = {
     a * b if n is 0
     1 if n > 0 and b = 0
-    uparrow(a, n-1, uparrow(a, n-1, b-1)) otherwise
+    uparrow(a, uparrow(a, n-1, b-1), n-1) otherwise
 }
 
 You can think of this operation as the generalization that comes after
