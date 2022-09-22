@@ -14,7 +14,7 @@ A complex number, a + ib times another complex number, c + id is equal to
 ac + ibc + iad - bd, so (a + ib) * (a + ib) is aa + 2iab - bb = aa - bb + 2iab
 
 We can't always know for sure if its going to infinity, but we do know that
-if the real or imaginary part is ever greater than 2, it will go to infinity,
+if the real or imaginary part ever have absolute value greater than 2, it will go to infinity,
 so if that is ever the case, we return 0.  Otherwise, if we do 100 iterations
 and have not yet returned, we return 1.
 */
